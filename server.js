@@ -4,6 +4,7 @@ require('dotenv').config();
 const express = require('express')
  
 const userRoutes = require('./routes/userRoutes')
+const contactRoutes = require('./routes/contactRoutes')
  
 const app = express();
  
@@ -12,7 +13,8 @@ app.use(express.json());
 app.get('/', (req, res)=> res.send('api funcionando'))
  
 app.use('/api/users', userRoutes)
- 
+app.use('/api/contacts', contactRoutes)
+  
 const PORT = process.env.PORT;
  
 sequelize.authenticate()
