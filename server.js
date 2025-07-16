@@ -5,13 +5,14 @@ const express = require('express')
  
 const userRoutes = require('./routes/userRoutes')
 const contactRoutes = require('./routes/contactRoutes')
- 
+const authRoutes = require('./routes/authRoutes');
 const app = express();
  
 app.use(express.json());
  
 app.get('/', (req, res)=> res.send('api funcionando'))
- 
+
+app.use('/api/auth', authRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/contacts', contactRoutes)
   
