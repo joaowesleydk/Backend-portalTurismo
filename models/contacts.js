@@ -23,7 +23,7 @@ const Contact = sequelize.define('Contact', {
     },
    
     message: {
-        type: DataTypes.TEXT,        // Texto simples
+        type: DataTypes.STRING,        // Texto simples
         allowNull: false,              // Campo obrigatório (não pode ser nulo)
       
     }

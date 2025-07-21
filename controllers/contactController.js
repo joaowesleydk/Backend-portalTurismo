@@ -23,7 +23,7 @@ exports.createContact = async (req, res) => {
     }
 }
 
-exports.listContact = async (_req, res) => {
+exports.listContact = async (req, res) => {
 
     try {
 
