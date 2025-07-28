@@ -1,2 +1,22 @@
-node_modules
-*.local
+# Ignora a pasta de dependências do Node.js
+node_modules/
+
+# Ignora o arquivo com variáveis sensíveis de ambiente
+.env
+
+# Ignora arquivos de log gerados durante a execução do app
+logs
+*.log
+
+# Ignora configurações locais do VS Code
+.vscode/
+
+# Ignora configurações de outras IDEs
+.idea/
+
+# Ignora arquivos de sistema do macOS
+.DS_Store
+
+# Ignora pastas de build geradas (caso use bundlers como Webpack ou TS)
+dist/
+build/
